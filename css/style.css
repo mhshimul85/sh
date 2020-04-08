@@ -1,0 +1,147 @@
+/* CSS code for Smart home */
+
+.main{
+
+}
+
+h1{
+  color: #2196F3;
+  text-align: center;
+}
+
+.water-tank{
+  max-width:300px;
+  margin: 0 auto;
+  position: relative;
+}
+.water-tank-p{
+  color: black;
+  font-size: 400%;
+  z-index: 3;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s all ease;
+}
+.water-tank-img img{
+  height:100%;
+  width:100%;
+  z-index: 2;
+  position: relative;
+}
+
+.water-tank-waterlevel-main{
+  height: 93%;
+  width: 100%;
+  bottom: 10px;
+  position: absolute;
+  z-index: 1;
+}
+.water-tank-waterlevel{
+  transition: 1s all ease;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+
+.relay{
+  margin: 0 auto;
+  max-width: 800px;
+  overflow:hidden;
+  border: 2px solid #2196F3;
+  border-radius: 0 25px;
+  margin-top: 10px;
+}
+p{
+  float: left;
+  font-weight: bold;
+  font-size: 130%;
+  line-height: 5px;
+  margin-left: 10px;
+  color: #2196F3;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float: right;
+  margin: 7px 8px 0 0;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*
+
+
+body{
+  text-align: center;
+  background-color:;
+}
+
+.lightStatus{
+  margin-top: 40%;
+  color: white;
+  font-family: Verdana;
+}
+.lightButton{
+  font-size: 1.5em;
+  font-family: Verdana;
+  padding: 10px;
+}
